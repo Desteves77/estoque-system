@@ -102,7 +102,7 @@ public class MenuInsumos {
 			int novaQuantidade = sc.nextInt();
 			
 			if(!novoNome.trim().isEmpty()) insumoExistente.setNome(novoNome);
-			if(novaQuantidade<=-1) insumoExistente.setQuantidade(novaQuantidade);
+			if(novaQuantidade>=-1) insumoExistente.setQuantidade(novaQuantidade);
 			
 			boolean atualizado = insumoService.atualizarInsumo(insumoExistente);
 			

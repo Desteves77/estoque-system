@@ -98,13 +98,13 @@ public class MenuProdutos {
 			}
 			
 			System.out.println("Pote atual: "+ poteExistente);
-			System.out.println("Novo nome (deixe vazio para permanecer o mesmo):");
+			System.out.println("Novo nome:");
 			String novoNome= sc.nextLine();
-			System.out.println("Nova quantidade (deixe vazio para permanecer a mesma):");
+			System.out.println("Nova quantidade:");
 			int novaQuantidade = sc.nextInt();
 			
 			if(!novoNome.trim().isEmpty()) poteExistente.setNome(novoNome);
-			if(novaQuantidade<=-1) poteExistente.setQuantidade(novaQuantidade);
+			if(novaQuantidade>=-1) poteExistente.setQuantidade(novaQuantidade);
 			
 			boolean atualizado = poteService.atualizarPote(poteExistente);
 			
