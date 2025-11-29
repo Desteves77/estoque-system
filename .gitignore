@@ -1,0 +1,17 @@
+# Arquivos sensíveis
+src/main/resources/config.properties
+
+# Arquivo de exemplo (permitido)
+!src/main/resources/config.example.properties
+
+# Maven
+target/
+
+# Eclipse
+.settings/
+.project
+.classpath
+
+# Arquivos temporários
+*.log
+*.tmp
