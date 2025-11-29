@@ -96,9 +96,9 @@ public class MenuInsumos {
 			}
 			
 			System.out.println("Insumo atual: "+ insumoExistente);
-			System.out.println("Novo nome (deixe vazio para permanecer o mesmo):");
+			System.out.println("Novo nome:");
 			String novoNome= sc.nextLine();
-			System.out.println("Nova quantidade (deixe vazio para permanecer a mesma):");
+			System.out.println("Nova quantidade:");
 			int novaQuantidade = sc.nextInt();
 			
 			if(!novoNome.trim().isEmpty()) insumoExistente.setNome(novoNome);
